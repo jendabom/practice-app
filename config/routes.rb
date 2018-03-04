@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  # verb  url          controller  method
+  get '/hello_url' => 'pages#hello_method'
+  get '/hello_again' => 'pages#show'
+  get '/goodbye' => 'pages#goodbye'
 end
